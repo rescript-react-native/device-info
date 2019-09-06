@@ -1,0 +1,41 @@
+{
+  "name": "@reason-react-native/device-info",
+  "version": "0.3.1",
+  "description": "Reason/BuckleScript bindings for react-native-device-info",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Christoph Knittel <ck@cca.io>",
+  "repository": "https://github.com/reason-react-native/device-info.git",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "reason-react-native",
+    "react-native-device-info",
+    "device-info"
+  ],
+  "files": [
+    "*",
+    "!.DS_Store",
+    "!**/*.bs.js",
+    "!.merlin",
+    "!lib/bs",
+    "!lib/ocaml"
+  ],
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "test": "bsb -clean-world -make-world"
+  },
+  "peerDependencies": {
+    "react-native-device-info": ">=0.24.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^5.0.6",
+    "react-native-device-info": "^2.3.2"
+  }
+}
