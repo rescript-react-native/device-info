@@ -1,6 +1,6 @@
 {
   "name": "@reason-react-native/device-info",
-  "version": "0.3.1",
+  "version": "5.3.0",
   "description": "Reason/BuckleScript bindings for react-native-device-info",
   "publishConfig": {
     "access": "public"
