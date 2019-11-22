@@ -5,6 +5,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "peerDependencies": {
+    "react-native-device-info": "^5.3.0"
+  },
   "repository": "https://github.com/reason-react-native/__template__.git",
   "license": "MIT",
   "keywords": [
