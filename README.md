@@ -48,7 +48,7 @@ yarn add @reason-react-native/device-info
 
 #### `ReactNativeDeviceInfo.asyncHookResult('result)`
 
-```re
+```reason
 {
   .
   "loading": bool,
@@ -58,7 +58,7 @@ yarn add @reason-react-native/device-info
 
 #### `ReactNativeDeviceInfo.powerState`
 
-```re
+```reason
 type powerState  = {
   batteryLevel: float,
   batteryState: string, // | "unplugged" | "charging" | "full" | "unknown"
@@ -70,433 +70,433 @@ type powerState  = {
 
 #### `ReactNativeDeviceInfo.getAndroidId()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getApiLevel()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getApplicationName()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getAvailableLocationProviders()`
 
-```re
+```reason
 unit => Js.Promise.t(Js.Dict.t(bool))
 ```
 
 #### `ReactNativeDeviceInfo.getBaseOs()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBatteryLevel()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getBootloader()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBrand()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getBuildId()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBuildNumber()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getBundleId()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getCarrier()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getCodename()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDevice()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceId()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceName()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceType()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getDisplay()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getFingerprint()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getFirstInstallTime()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getFontScale()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getFreeDiskStorage()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getHardware()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getHost()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getIncremental()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getInstallReferrer()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getInstanceId()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getIpAddress()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getLastUpdateTime()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getMacAddress()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getManufacturer()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getMaxMemory()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getModel()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getPhoneNumber()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getPowerState()`
 
-```re
+```reason
 unit => Js.Promise.t(powerState)
 ```
 
 #### `ReactNativeDeviceInfo.getPreviewSdkInt()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getProduct()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getReadableVersion()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getSecurityPatch()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getSerialNumber()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getSystemAvailableFeatures()`
 
-```re
+```reason
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.getSystemName()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getSystemVersion()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getTags()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getTotalDiskCapacity()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getTotalMemory()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getType()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getUniqueId()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getUsedMemory()`
 
-```re
+```reason
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getUserAgent()`
 
-```re
+```reason
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getVersion()`
 
-```re
+```reason
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.hasNotch()`
 
-```re
+```reason
 unit => bool
 ```
 
 #### `ReactNativeDeviceInfo.hasSystemFeature()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isAirplaneMode()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isBatteryCharging()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isCameraPresent()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isEmulator()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isHeadphonesConnected()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isLandscape()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isLocationEnabled()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isPinOrFingerprintSet()`
 
-```re
+```reason
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isTablet()`
 
-```re
+```reason
 unit => bool
 ```
 
 #### `ReactNativeDeviceInfo.supported32BitAbis()`
 
-```re
+```reason
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.supported64BitAbis()`
 
-```re
+```reason
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.supportedAbis()`
 
-```re
+```reason
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.useBatteryLevel()`
 
-```re
+```reason
 unit => option(float)
 ```
 
 #### `ReactNativeDeviceInfo.useBatteryLevelIsLow()`
 
-```re
+```reason
 unit => option(float)
 ```
 
 #### `ReactNativeDeviceInfo.useDeviceName()`
 
-```re
+```reason
 unit => asyncHookResult(string)
 ```
 
 #### `ReactNativeDeviceInfo.useFirstInstallTime()`
 
-```re
+```reason
 unit => asyncHookResult(float)
 ```
 
 #### `ReactNativeDeviceInfo.useHasSystemFeature()`
 
-```re
+```reason
 string => asyncHookResult(bool)
 ```
 
 #### `ReactNativeDeviceInfo.useIsEmulator()`
 
-```re
+```reason
 unit => asyncHookResult(bool)
 ```
 
 #### `ReactNativeDeviceInfo.usePowerState()`
 
-```re
+```reason
 unit => powerState
 ```
 
