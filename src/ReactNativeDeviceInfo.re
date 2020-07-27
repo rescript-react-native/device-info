@@ -68,6 +68,9 @@ external getDeviceId: unit => string = "getDeviceId";
 external getDeviceName: unit => Js.Promise.t(string) = "getDeviceName";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
+external getDeviceToken: unit => Js.Promise.t(string) = "getDeviceToken";
+
+[@bs.module "react-native-device-info"] [@bs.scope "default"]
 external getDeviceType: unit => string = "getDeviceType";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
@@ -95,6 +98,10 @@ external getHost: unit => Js.Promise.t(string) = "getHost";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external getIncremental: unit => Js.Promise.t(string) = "getIncremental";
+
+[@bs.module "react-native-device-info"] [@bs.scope "default"]
+external getInstallerPackageName: unit => Js.Promise.t(string) =
+  "getInstallerPackageName";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external getInstallReferrer: unit => Js.Promise.t(string) =
@@ -223,6 +230,9 @@ external supported64BitAbis: unit => Js.Promise.t(Js.Array.t(string)) =
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external supportedAbis: unit => Js.Promise.t(Js.Array.t(string)) =
   "supportedAbis";
+
+[@bs.module "react-native-device-info"] [@bs.scope "default"]
+external syncUniqueId: unit => Js.Promise.t(string) = "syncUniqueId";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external useBatteryLevel: unit => option(float) = "useBatteryLevel";
