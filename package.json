@@ -1,7 +1,7 @@
 {
   "name": "@reason-react-native/device-info",
   "version": "5.6.0",
-  "description": "Reason/BuckleScript bindings for react-native-device-info",
+  "description": "ReScript/Reason bindings for react-native-device-info",
   "publishConfig": {
     "access": "public"
   },
@@ -11,6 +11,7 @@
   "repository": "https://github.com/reason-react-native/__template__.git",
   "license": "MIT",
   "keywords": [
+    "rescript",
     "reason",
     "reasonml",
     "bucklescript",
