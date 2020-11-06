@@ -2,9 +2,8 @@
 // https://github.com/react-native-community/react-native-device-info/blob/db504076eb8bf311138917d403491ee4d01fdc01/src/index.js.flow
 
 type asyncHookResult('result) = {
-  .
-  "loading": bool,
-  "result": 'result,
+  loading: bool,
+  result: 'result,
 };
 
 type powerState = {
@@ -253,6 +252,13 @@ external useHasSystemFeature: string => asyncHookResult(bool) =
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external useIsEmulator: unit => asyncHookResult(bool) = "useIsEmulator";
+
+[@bs.module "react-native-device-info"] [@bs.scope "default"]
+external useIsHeadphonesConnected: unit => asyncHookResult(bool) =
+  "useIsHeadphonesConnected";
+
+[@bs.module "react-native-device-info"] [@bs.scope "default"]
+external useManufacturer: unit => asyncHookResult(string) = "useManufacturer";
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
 external usePowerState: unit => powerState = "usePowerState";
