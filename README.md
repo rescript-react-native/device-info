@@ -5,7 +5,7 @@
 [![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
 
 [ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
-[`react-native-device-info`](https://github.com/react-native-community/react-native-device-info).
+[`react-native-device-info`](https://github.com/react-native-device-info/react-native-device-info).
 
 Exposed as `ReactNativeDeviceInfo` module.
 
@@ -15,7 +15,7 @@ Exposed as `ReactNativeDeviceInfo` module.
 ## Installation
 
 When
-[`react-native-device-info`](https://github.com/react-native-community/react-native-device-info)
+[`react-native-device-info`](https://github.com/react-native-device-info/react-native-device-info)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 

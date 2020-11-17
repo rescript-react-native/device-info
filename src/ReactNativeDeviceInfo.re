@@ -1,5 +1,5 @@
 // good reference
-// https://github.com/react-native-community/react-native-device-info/blob/db504076eb8bf311138917d403491ee4d01fdc01/src/index.js.flow
+// https://github.com/react-native-device-info/react-native-device-info/blob/db504076eb8bf311138917d403491ee4d01fdc01/src/index.js.flow
 
 type asyncHookResult('result) = {
   loading: bool,
@@ -11,10 +11,10 @@ type powerState = {
   batteryLevel: float,
   batteryState: string, // | "unplugged" | "charging" | "full" | "unknown"
   // optional for apple tv
-  // https://github.com/react-native-community/react-native-device-info/blob/5db7c09e47d731f62e39e881139baa8d00cc9df0/ios/RNDeviceInfo/RNDeviceInfo.m#L575-L581
+  // https://github.com/react-native-device-info/react-native-device-info/blob/5db7c09e47d731f62e39e881139baa8d00cc9df0/ios/RNDeviceInfo/RNDeviceInfo.m#L575-L581
   lowPowerMode: option(bool),
   // we don't support anything else yet (chargingtime/dischargingtime)
-  // see https://github.com/react-native-community/react-native-device-info/issues/new?template=feature_request.md
+  // see https://github.com/react-native-device-info/react-native-device-info/issues/new?template=feature_request.md
 };
 
 [@bs.module "react-native-device-info"] [@bs.scope "default"]
