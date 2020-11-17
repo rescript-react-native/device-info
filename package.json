@@ -1,7 +1,7 @@
 {
   "name": "@reason-react-native/device-info",
+  "description": "ReScript bindings for react-native-device-info.",
   "version": "7.0.0",
-  "description": "ReScript/Reason bindings for react-native-device-info",
   "publishConfig": {
     "access": "public"
   },
