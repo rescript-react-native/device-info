@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/device-info`
 
+## 7.0.1 - 2021-05-03
+
+ReScript
+
 ## 7.0.0 - 2020-11-06
 
 - Added `useIsHeadphonesConnected`
