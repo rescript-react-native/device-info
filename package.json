@@ -1,5 +1,5 @@
 {
-  "name": "@reason-react-native/device-info",
+  "name": "@rescript-react-native/device-info",
   "description": "ReScript bindings for react-native-device-info.",
   "version": "7.0.0",
   "publishConfig": {
@@ -8,19 +8,17 @@
   "peerDependencies": {
     "react-native-device-info": "^7.0.0"
   },
-  "repository": "https://github.com/reason-react-native/__template__.git",
+  "repository": "https://github.com/rescript-react-native/__template__.git",
   "license": "MIT",
   "keywords": [
     "rescript",
-    "reason",
-    "reasonml",
-    "bucklescript",
     "react-native"
   ],
   "files": [
     "*.md",
     "bsconfig.json",
-    "src/**/*.re",
+    "src/**/*.res",
+    "src/**/*.resi",
     "src/**/*.js",
     "!src/**/*.bs.js"
   ],
@@ -37,7 +35,7 @@
     "release": "npmpub"
   },
   "devDependencies": {
-    "bs-platform": "^8.2.0",
+    "bs-platform": "^9.0.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "npmpub": "^5.0.0",

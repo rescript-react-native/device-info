@@ -1,15 +1,15 @@
-# `@reason-react-native/device-info`
+# `@rescript-react-native/device-info`
 
-[![Build Status](https://github.com/reason-react-native/device-info/workflows/Build/badge.svg)](https://github.com/reason-react-native/device-info/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/device-info.svg)](https://www.npmjs.com/@reason-react-native/device-info)
-[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
+[![Build Status](https://github.com/rescript-react-native/device-info/workflows/Build/badge.svg)](https://github.com/rescript-react-native/device-info/actions)
+[![Version](https://img.shields.io/npm/v/@rescript-react-native/device-info.svg)](https://www.npmjs.com/@rescript-react-native/device-info)
+[![ReScript Forum](https://img.shields.io/discourse/posts?color=e6484f&label=ReScript%20Forum&server=https%3A%2F%2Fforum.rescript-lang.org)](https://forum.rescript-lang.org/)
 
-[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[ReScript](https://rescript-lang.org) bindings for
 [`react-native-device-info`](https://github.com/react-native-device-info/react-native-device-info).
 
 Exposed as `ReactNativeDeviceInfo` module.
 
-`@reason-react-native/device-info` X.y.\* means it's compatible with
+`@rescript-react-native/device-info` X.y.\* means it's compatible with
 `react-native-device-info` X.y.\*
 
 ## Installation
@@ -20,22 +20,22 @@ is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/device-info
+npm install @rescript-react-native/device-info
 # or
-yarn add @reason-react-native/device-info
+yarn add @rescript-react-native/device-info
 ```
 
-`@reason-react-native/device-info` should be added to `bs-dependencies` in your
+`@rescript-react-native/device-info` should be added to `bs-dependencies` in your
 `bsconfig.json`:
 
 ```diff
 {
   //...
   "bs-dependencies": [
-    "reason-react",
-    "reason-react-native",
+    "@rescript/react",
+    "rescript-react-native",
     // ...
-+    "@reason-react-native/device-info"
++    "@rescript-react-native/device-info"
   ],
   //...
 }
@@ -47,7 +47,7 @@ yarn add @reason-react-native/device-info
 
 #### `ReactNativeDeviceInfo.asyncHookResult('result)`
 
-```reason
+```rescript
 {
   .
   "loading": bool,
@@ -57,7 +57,7 @@ yarn add @reason-react-native/device-info
 
 #### `ReactNativeDeviceInfo.powerState`
 
-```reason
+```rescript
 type powerState  = {
   batteryLevel: float,
   batteryState: string, // | "unplugged" | "charging" | "full" | "unknown"
@@ -69,433 +69,433 @@ type powerState  = {
 
 #### `ReactNativeDeviceInfo.getAndroidId()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getApiLevel()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getApplicationName()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getAvailableLocationProviders()`
 
-```reason
+```rescript
 unit => Js.Promise.t(Js.Dict.t(bool))
 ```
 
 #### `ReactNativeDeviceInfo.getBaseOs()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBatteryLevel()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getBootloader()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBrand()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getBuildId()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getBuildNumber()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getBundleId()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getCarrier()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getCodename()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDevice()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceId()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceName()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getDeviceType()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getDisplay()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getFingerprint()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getFirstInstallTime()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getFontScale()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getFreeDiskStorage()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getHardware()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getHost()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getIncremental()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getInstallReferrer()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getInstanceId()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getIpAddress()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getLastUpdateTime()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getMacAddress()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getManufacturer()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getMaxMemory()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getModel()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getPhoneNumber()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getPowerState()`
 
-```reason
+```rescript
 unit => Js.Promise.t(powerState)
 ```
 
 #### `ReactNativeDeviceInfo.getPreviewSdkInt()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getProduct()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getReadableVersion()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getSecurityPatch()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getSerialNumber()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getSystemAvailableFeatures()`
 
-```reason
+```rescript
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.getSystemName()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getSystemVersion()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getTags()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getTotalDiskCapacity()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getTotalMemory()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getType()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getUniqueId()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.getUsedMemory()`
 
-```reason
+```rescript
 unit => Js.Promise.t(float)
 ```
 
 #### `ReactNativeDeviceInfo.getUserAgent()`
 
-```reason
+```rescript
 unit => Js.Promise.t(string)
 ```
 
 #### `ReactNativeDeviceInfo.getVersion()`
 
-```reason
+```rescript
 unit => string
 ```
 
 #### `ReactNativeDeviceInfo.hasNotch()`
 
-```reason
+```rescript
 unit => bool
 ```
 
 #### `ReactNativeDeviceInfo.hasSystemFeature()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isAirplaneMode()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isBatteryCharging()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isCameraPresent()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isEmulator()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isHeadphonesConnected()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isLandscape()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isLocationEnabled()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isPinOrFingerprintSet()`
 
-```reason
+```rescript
 unit => Js.Promise.t(bool)
 ```
 
 #### `ReactNativeDeviceInfo.isTablet()`
 
-```reason
+```rescript
 unit => bool
 ```
 
 #### `ReactNativeDeviceInfo.supported32BitAbis()`
 
-```reason
+```rescript
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.supported64BitAbis()`
 
-```reason
+```rescript
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.supportedAbis()`
 
-```reason
+```rescript
 unit => Js.Promise.t(Js.Array.t(string))
 ```
 
 #### `ReactNativeDeviceInfo.useBatteryLevel()`
 
-```reason
+```rescript
 unit => option(float)
 ```
 
 #### `ReactNativeDeviceInfo.useBatteryLevelIsLow()`
 
-```reason
+```rescript
 unit => option(float)
 ```
 
 #### `ReactNativeDeviceInfo.useDeviceName()`
 
-```reason
+```rescript
 unit => asyncHookResult(string)
 ```
 
 #### `ReactNativeDeviceInfo.useFirstInstallTime()`
 
-```reason
+```rescript
 unit => asyncHookResult(float)
 ```
 
 #### `ReactNativeDeviceInfo.useHasSystemFeature()`
 
-```reason
+```rescript
 string => asyncHookResult(bool)
 ```
 
 #### `ReactNativeDeviceInfo.useIsEmulator()`
 
-```reason
+```rescript
 unit => asyncHookResult(bool)
 ```
 
 #### `ReactNativeDeviceInfo.usePowerState()`
 
-```reason
+```rescript
 unit => powerState
 ```
 
@@ -511,11 +511,11 @@ releases.
 ## Contribute
 
 Read the
-[contribution guidelines](https://github.com/reason-react-native/.github/blob/master/CONTRIBUTING.md)
+[contribution guidelines](https://github.com/rescript-react-native/.github/blob/master/CONTRIBUTING.md)
 before contributing.
 
 ## Code of Conduct
 
 We want this community to be friendly and respectful to each other. Please read
-[our full code of conduct](https://github.com/reason-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
+[our full code of conduct](https://github.com/rescript-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
 so that you can understand what actions will and will not be tolerated.
