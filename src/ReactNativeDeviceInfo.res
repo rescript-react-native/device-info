@@ -12,7 +12,7 @@ type powerState = {
   batteryState: string, // | "unplugged" | "charging" | "full" | "unknown"
   // optional for apple tv
   // https://github.com/react-native-device-info/react-native-device-info/blob/5db7c09e47d731f62e39e881139baa8d00cc9df0/ios/RNDeviceInfo/RNDeviceInfo.m#L575-L581
-  lowPowerMode: option<bool>,
+  lowPowerMode?: bool,
   // we don't support anything else yet (chargingtime/dischargingtime)
   // see https://github.com/react-native-device-info/react-native-device-info/issues/new?template=feature_request.md
 }
